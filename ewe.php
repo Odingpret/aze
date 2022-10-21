@@ -67,11 +67,6 @@ $prodid = ($idpp);
     }
 
 
-} else {
-    echo @color('red', $login['message']."\n");
-    
-}
-
 function login($nomor){
 	$host = "bimaplus.tri.co.id";        
     $data = '{"imei":"Android 93488a982824b403","language":1,"msisdn":"'.$nomor.'"}';
