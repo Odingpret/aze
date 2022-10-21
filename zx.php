@@ -32,15 +32,18 @@ if (strpos(json_encode($login), '"status":true')) {
 
     echo @color('purple', "MASUKAN ID PAKET XL\t\t: ");
     $idpp = trim(fgets(STDIN));
-            $prodid = '$idpp';
-            break;
+         
+$prodid = ($idpp);
             
-        
-        default:
+            
+          
+            
+            
+            
             echo @color('red', "PILIH ID PAKET TERLEBIH DAHULU\n");
             goto cek;
             break;
-    }
+}
     $cek = cek($prodid);
     $name = $cek['product']['productName'];
     $price = $cek['product']['productPrice'];
